@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Hello Django</title>
+</head>
+<body>
+    <h1>{{ header }}</h1>
+    <p>Name: {{ user.name}} Age: {{user.age}}</p>
+    <p>Address: st. {{address.0}}, h. {{address.1}}, r. {{address.2}}</p>
+    <p>Langs: {{langs.0}}, {{langs.1}}</p>
+    <img src="{% static 'image/pic.jpg' %}" alt="Flowers" >
+</body>
+</html>
